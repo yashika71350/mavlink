@@ -1023,16 +1023,21 @@
       <entry value="1" name="PARAM_WRITE_PERSISTENT">
         <description>Write all parameter values to persistent storage (flash/EEPROM)</description>
       </entry>
-      <entry value="2" name="PARAM_RESET_ALL_DEFAULT">
-        <description>Reset all parameters to default values</description>
+      <entry value="2" name="RESERVED_DO_NOT_USE">
+        <description>This value previously has been deprecated.
+          Previously it has been defined as both PARAM_RESET_ALL_DEFAULT and PARAM_RESET_CONFIG_DEFAULT.
+        </description>
       </entry>
       <entry value="3" name="PARAM_RESET_SENSOR_DEFAULT">
         <description>Reset only sensor calibration parameters to factory defaults (or firmware default if not available)</description>
       </entry>
-      <entry value="4" name="PARAM_RESET_CONFIG_DEFAULT">
+      <entry value="4" name="PARAM_RESET_ALL_DEFAULT">
+        <description>Reset all parameters to default values</description>
+      </entry>
+      <entry value="5" name="PARAM_RESET_CONFIG_DEFAULTS">
         <description>Reset user configurable parameters to their default value.
           This includes all vehicle settings, including safety, setup, and calibrations, CAN nodes, and so on.
-          Unlike PARAM_RESET_ALL_DEFAULTS It does not reset values that contain vehicle operational data and statistics that are calculated across a vehicle lifetime.</description>
+          Unlike PARAM_RESET_ALL_DEFAULT it does not reset values that contain vehicle operational data and statistics that are calculated across a vehicle lifetime.</description>
       </entry>
     </enum>
     <enum name="PREFLIGHT_STORAGE_MISSION_ACTION">
