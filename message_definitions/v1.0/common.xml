@@ -1031,8 +1031,8 @@
       </entry>
       <entry value="4" name="PARAM_RESET_CONFIG_DEFAULT">
         <description>Reset user configurable parameters to their default value.
-          This includes airframe selection, sensor calibration data, safety settings, and so on.
-          It does not reset values that contain vehicle operational data and statistics that are calculated across a vehicle lifetime.</description>
+          This includes all vehicle settings, including safety, setup, and calibrations, CAN nodes, and so on.
+          Unlike PARAM_RESET_ALL_DEFAULTS It does not reset values that contain vehicle operational data and statistics that are calculated across a vehicle lifetime.</description>
       </entry>
     </enum>
     <enum name="PREFLIGHT_STORAGE_MISSION_ACTION">
