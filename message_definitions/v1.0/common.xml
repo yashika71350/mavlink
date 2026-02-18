@@ -1022,10 +1022,12 @@
       </entry>
       <entry value="1" name="PARAM_WRITE_PERSISTENT">
         <description>Write all parameter values to persistent storage (flash/EEPROM)</description>
-      </entry>
-      <entry value="2" name="RESERVED_DO_NOT_USE">
-        <description>This value previously has been deprecated.
-          Previously it has been defined as both PARAM_RESET_ALL_DEFAULT and PARAM_RESET_CONFIG_DEFAULT.
+      </entry>      
+      <entry value="2" name="PARAM_RESET_CONFIG_DEFAULT">
+        <deprecated since="2025-02" replaced_by="PARAM_RESET_CONFIG_DEFAULTS PARAM_RESET_ALL_DEFAULT"/>
+        <description>Reserved.Do not implement in new flight stacks.
+          PX4 uses/used this as an alias for PARAM_RESET_CONFIG_DEFAULTS.
+          ArduPilot uses/used this as PARAM_RESET_ALL_DEFAULT.
         </description>
       </entry>
       <entry value="3" name="PARAM_RESET_SENSOR_DEFAULT">
