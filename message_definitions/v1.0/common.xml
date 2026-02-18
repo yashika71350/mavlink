@@ -1024,7 +1024,7 @@
         <description>Write all parameter values to persistent storage (flash/EEPROM)</description>
       </entry>
       <entry value="2" name="PARAM_RESET_ALL_DEFAULT">
-        <description>Reset all parameters, including operation counters, to default values</description>
+        <description>Reset all parameters to default values</description>
       </entry>
       <entry value="3" name="PARAM_RESET_SENSOR_DEFAULT">
         <description>Reset only sensor calibration parameters to factory defaults (or firmware default if not available)</description>
