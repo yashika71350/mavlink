@@ -171,8 +171,10 @@ endmacro()
 # build
 set(v1.0Definitions
     ASLUAV.xml
-    ardupilotmega.xml
-    common.xml
+    customardumega.xml
+    customcommon.xml
+    # ardupilotmega.xml
+    # common.xml
     matrixpilot.xml
     minimal.xml
     paparazzi.xml
